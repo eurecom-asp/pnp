@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Positive-Incentive Noise Predictor Audio Samples</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">Audio adversarial purification demo</p>
+        <h1>Positive-Incentive Noise Predictor</h1>
+        <p class="lede">
+          Listen to two anonymized utterances under 50-step MI-FGSM and compare
+          online purification outputs with matched spectrogram thumbnails.
+        </p>
+        <nav class="hero-actions" aria-label="Project links">
+          <span class="button primary disabled" aria-disabled="true">arXiv coming soon</span>
+          <span class="button disabled" aria-disabled="true">GitHub coming soon</span>
+        </nav>
+      </header>
+
+      <section class="sample-grid" aria-label="Audio samples">
+        <article class="sample-card" aria-labelledby="sample-1-title">
+          <header class="sample-heading">
+            <p>Sample 01</p>
+            <h2 id="sample-1-title">Reference, attack, and purification outputs</h2>
+          </header>
+
+          <div class="group">
+            <h3>Reference</h3>
+            <figure class="track clean">
+              <figcaption>Clean</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/clean.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/clean.png" alt="Clean spectrogram for Sample 01" />
+            </figure>
+            <figure class="track attacked">
+              <figcaption>Attacked / No defender</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/attacked_no_defender.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/attacked_no_defender.png" alt="Attacked spectrogram for Sample 01" />
+            </figure>
+          </div>
+
+          <div class="group pnp-group">
+            <h3>Proposed PnP purifiers</h3>
+            <figure class="track pnp">
+              <figcaption>PnP-Gaussian</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/pnp_gaussian.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/pnp_gaussian.png" alt="PnP-Gaussian spectrogram for Sample 01" />
+            </figure>
+            <figure class="track pnp">
+              <figcaption>PnP-Diff</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/pnp_diff.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/pnp_diff.png" alt="PnP-Diff spectrogram for Sample 01" />
+            </figure>
+            <figure class="track pnp">
+              <figcaption>PnP-Diff-2</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/pnp_diff_2.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/pnp_diff_2.png" alt="PnP-Diff-2 spectrogram for Sample 01" />
+            </figure>
+            <figure class="track pnp">
+              <figcaption>PnP-Diff + AudioPure</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/pnp_diff_audiopure.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/pnp_diff_audiopure.png" alt="PnP-Diff plus AudioPure spectrogram for Sample 01" />
+            </figure>
+            <figure class="track pnp">
+              <figcaption>PnP-Diff + DiffWavePnP</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/pnp_diff_diffwavepnp.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/pnp_diff_diffwavepnp.png" alt="PnP-Diff plus DiffWavePnP spectrogram for Sample 01" />
+            </figure>
+          </div>
+
+          <div class="group baseline-group">
+            <h3>Baseline purifiers</h3>
+            <figure class="track">
+              <figcaption>DAP</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/dap.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/dap.png" alt="DAP spectrogram for Sample 01" />
+            </figure>
+            <figure class="track">
+              <figcaption>AudioPure</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/audiopure.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/audiopure.png" alt="AudioPure spectrogram for Sample 01" />
+            </figure>
+            <figure class="track">
+              <figcaption>AudioPure+SSNI</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/audiopure_ssni.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/audiopure_ssni.png" alt="AudioPure+SSNI spectrogram for Sample 01" />
+            </figure>
+            <figure class="track">
+              <figcaption>Noise-0.005</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/noise_0p005.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/noise_0p005.png" alt="Noise-0.005 spectrogram for Sample 01" />
+            </figure>
+            <figure class="track">
+              <figcaption>Noise-0.01</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/noise_0p01.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/noise_0p01.png" alt="Noise-0.01 spectrogram for Sample 01" />
+            </figure>
+            <figure class="track">
+              <figcaption>Noise-0.02</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/noise_0p02.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/noise_0p02.png" alt="Noise-0.02 spectrogram for Sample 01" />
+            </figure>
+            <figure class="track">
+              <figcaption>SpeechTokenizer</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/speechtokenizer.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/speechtokenizer.png" alt="SpeechTokenizer spectrogram for Sample 01" />
+            </figure>
+            <figure class="track">
+              <figcaption>DAC</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/dac.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/dac.png" alt="DAC spectrogram for Sample 01" />
+            </figure>
+            <figure class="track">
+              <figcaption>AcademiCodec</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_01/academicodec.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_01/academicodec.png" alt="AcademiCodec spectrogram for Sample 01" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="sample-card" aria-labelledby="sample-2-title">
+          <header class="sample-heading">
+            <p>Sample 02</p>
+            <h2 id="sample-2-title">Reference, attack, and purification outputs</h2>
+          </header>
+
+          <div class="group">
+            <h3>Reference</h3>
+            <figure class="track clean">
+              <figcaption>Clean</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/clean.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/clean.png" alt="Clean spectrogram for Sample 02" />
+            </figure>
+            <figure class="track attacked">
+              <figcaption>Attacked / No defender</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/attacked_no_defender.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/attacked_no_defender.png" alt="Attacked spectrogram for Sample 02" />
+            </figure>
+          </div>
+
+          <div class="group pnp-group">
+            <h3>Proposed PnP purifiers</h3>
+            <figure class="track pnp">
+              <figcaption>PnP-Gaussian</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/pnp_gaussian.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/pnp_gaussian.png" alt="PnP-Gaussian spectrogram for Sample 02" />
+            </figure>
+            <figure class="track pnp">
+              <figcaption>PnP-Diff</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/pnp_diff.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/pnp_diff.png" alt="PnP-Diff spectrogram for Sample 02" />
+            </figure>
+            <figure class="track pnp">
+              <figcaption>PnP-Diff-2</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/pnp_diff_2.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/pnp_diff_2.png" alt="PnP-Diff-2 spectrogram for Sample 02" />
+            </figure>
+            <figure class="track pnp">
+              <figcaption>PnP-Diff + AudioPure</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/pnp_diff_audiopure.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/pnp_diff_audiopure.png" alt="PnP-Diff plus AudioPure spectrogram for Sample 02" />
+            </figure>
+            <figure class="track pnp">
+              <figcaption>PnP-Diff + DiffWavePnP</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/pnp_diff_diffwavepnp.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/pnp_diff_diffwavepnp.png" alt="PnP-Diff plus DiffWavePnP spectrogram for Sample 02" />
+            </figure>
+          </div>
+
+          <div class="group baseline-group">
+            <h3>Baseline purifiers</h3>
+            <figure class="track">
+              <figcaption>DAP</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/dap.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/dap.png" alt="DAP spectrogram for Sample 02" />
+            </figure>
+            <figure class="track">
+              <figcaption>AudioPure</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/audiopure.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/audiopure.png" alt="AudioPure spectrogram for Sample 02" />
+            </figure>
+            <figure class="track">
+              <figcaption>AudioPure+SSNI</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/audiopure_ssni.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/audiopure_ssni.png" alt="AudioPure+SSNI spectrogram for Sample 02" />
+            </figure>
+            <figure class="track">
+              <figcaption>Noise-0.005</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/noise_0p005.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/noise_0p005.png" alt="Noise-0.005 spectrogram for Sample 02" />
+            </figure>
+            <figure class="track">
+              <figcaption>Noise-0.01</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/noise_0p01.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/noise_0p01.png" alt="Noise-0.01 spectrogram for Sample 02" />
+            </figure>
+            <figure class="track">
+              <figcaption>Noise-0.02</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/noise_0p02.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/noise_0p02.png" alt="Noise-0.02 spectrogram for Sample 02" />
+            </figure>
+            <figure class="track">
+              <figcaption>SpeechTokenizer</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/speechtokenizer.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/speechtokenizer.png" alt="SpeechTokenizer spectrogram for Sample 02" />
+            </figure>
+            <figure class="track">
+              <figcaption>DAC</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/dac.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/dac.png" alt="DAC spectrogram for Sample 02" />
+            </figure>
+            <figure class="track">
+              <figcaption>AcademiCodec</figcaption>
+              <audio controls preload="metadata" src="audio/mifgsm50/sample_02/academicodec.wav"></audio>
+              <img class="spectrogram" loading="lazy" src="spectrograms/mifgsm50/sample_02/academicodec.png" alt="AcademiCodec spectrogram for Sample 02" />
+            </figure>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
