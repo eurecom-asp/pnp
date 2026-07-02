@@ -5,7 +5,7 @@ __pycache__/
 data/*
 !data/trials/
 !data/trials/*.txt
-checkpoints/*
+checkpoints/**
 !checkpoints/README.md
 !checkpoints/asv/
 !checkpoints/asv/.gitkeep

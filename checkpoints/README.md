@@ -2,6 +2,11 @@
 
 Place downloaded checkpoints under this directory.
 
+Released checkpoints are available on
+[Hugging Face](https://huggingface.co/RegulusB/pnp-asv-purification-checkpoints/tree/main/checkpoints).
+Download the `checkpoints/` folder and place it at the root of this GitHub
+repository.
+
 ```text
 checkpoints/
   asv/

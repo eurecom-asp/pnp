@@ -2,6 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2607.00899-b31b1b.svg)](https://arxiv.org/abs/2607.00899)
 [![Audio Demo](https://img.shields.io/badge/demo-audio_samples-1c8276.svg)](https://eurecom-asp.github.io/pnp/)
+[![Checkpoints](https://img.shields.io/badge/Hugging%20Face-checkpoints-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/RegulusB/pnp-asv-purification-checkpoints/tree/main/checkpoints)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Code release for **Positive-Incentive Noise Predictor (PnP)**, an adversarial
@@ -58,6 +59,11 @@ checkpoints/purifier/pnp_gaussian.pth
 checkpoints/purifier/pnp_diff.pth
 checkpoints/purifier/diffwave_pnp.ckpt
 ```
+
+Released checkpoints are hosted on
+[Hugging Face](https://huggingface.co/RegulusB/pnp-asv-purification-checkpoints/tree/main/checkpoints).
+Download the `checkpoints/` folder and place it at the root of this GitHub
+repository so the paths above resolve directly.
 
 More details are in [docs/DATA.md](docs/DATA.md).
 
