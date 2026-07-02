@@ -1,6 +1,6 @@
 # Positive-Incentive Noise Predictor for ASV Purification
 
-[![arXiv](https://img.shields.io/badge/arXiv-coming_soon-b31b1b.svg)](#)
+[![arXiv](https://img.shields.io/badge/arXiv-2607.00899-b31b1b.svg)](https://arxiv.org/abs/2607.00899)
 [![Audio Demo](https://img.shields.io/badge/demo-audio_samples-1c8276.svg)](https://eurecom-asp.github.io/pnp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
