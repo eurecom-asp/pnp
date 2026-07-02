@@ -119,8 +119,16 @@ and spectrogram thumbnails.
 
 ## Citation
 
-If you use this repository, please cite the corresponding paper. The final
-BibTeX entry will be added after publication.
+If you use this repository, please cite:
+
+```bibtex
+@article{bai2026positive,
+  title={Positive-Incentive Noise Predictor for Adversarial Purification in Speaker Verification},
+  author={Bai, Yibo and Chen, Sizhou and Panariello, Michele and Ma, Hao and Zhang, Xiao-Lei and Li, Xuelong and Todisco, Massimiliano and Evans, Nicholas},
+  journal={arXiv preprint arXiv:2607.00899},
+  year={2026}
+}
+```
 
 ## License and Acknowledgements
 
