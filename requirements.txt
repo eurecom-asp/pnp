@@ -1,0 +1,12 @@
+numpy
+scipy
+torch
+torchaudio
+librosa
+soundfile
+tqdm
+tensorboard
+matplotlib
+fairseq
+# Optional baseline package for --defender dac.
+descript-audio-codec

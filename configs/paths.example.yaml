@@ -1,0 +1,46 @@
+# Copy this file to configs/paths.yaml and adapt the paths to your machine.
+
+data:
+  voxceleb1_dev_wav: data/VoxCeleb1/dev/wav
+  voxceleb1_test_wav: data/VoxCeleb1/test/wav
+  trials:
+    dev_train: data/trials/vox1_e_dev_train.txt
+    test_4000: data/trials/vox1_test_4000.txt
+
+generated:
+  attacks: data/generated/attacks
+
+checkpoints:
+  asv:
+    ecapa: checkpoints/asv/ecapa_tdnn.pth
+    campp: checkpoints/asv/campp.pt
+    resnet: checkpoints/asv/resnet221.pth
+    simamresnet: checkpoints/asv/simamresnet100.pth
+  purifier:
+    audiopure_config: checkpoints/purifier/audiopure_config.json
+    audiopure: checkpoints/purifier/audiopure.pth
+    speechtokenizer_config: checkpoints/purifier/speechtokenizer_config.json
+    speechtokenizer: checkpoints/purifier/speechtokenizer.ckpt
+    dac: checkpoints/purifier/dac.pth
+    academicodec_config: checkpoints/purifier/academicodec_config.json
+    academicodec: checkpoints/purifier/academicodec.pth
+    ssni_reference_stats: checkpoints/purifier/ssni_reference_stats.json
+    pnp_gaussian: checkpoints/purifier/pnp_gaussian.pth
+    pnp_diff: checkpoints/purifier/pnp_diff.pth
+    diffwave_pnp: checkpoints/purifier/diffwave_pnp.ckpt
+
+external_repos:
+  speechtokenizer: local_repos/SpeechTokenizer
+  dac: local_repos/descript-audio-codec
+  academicodec: local_repos/AcademiCodec
+
+outputs:
+  scores: outputs/scores
+
+thresholds:
+  # Fill these after running scripts/estimate_asv_threshold.py on your ASV checkpoint.
+  # The ECAPA value below matches the released ECAPA FAKEBOB protocol.
+  ecapa: 0.25
+  campp: null
+  resnet: null
+  samresnet: null
